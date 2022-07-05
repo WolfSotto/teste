@@ -1,0 +1,12 @@
+Exercicio 3
+
+frase = str(input('Digite um frase: '))
+print(f'Você digitou: {frase} ')
+
+
+def inverter(txt):
+    return txt[::-1]
+
+
+frase_invertida = inverter(frase)
+print(frase_invertida)
