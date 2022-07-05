@@ -1,0 +1,18 @@
+# Exercicio 2
+
+numero_escolhido = int(input('Digite um numero para realizar a checagem: '))
+
+list = [0, 1, 1, 2]
+for i in range(10):
+    indice = len(list) - 1
+
+    ultimo = list[indice]
+    penultimo = list[indice - 1]
+
+    soma = ultimo + penultimo
+    list.append(soma)
+
+if numero_escolhido in list:
+    print(f'O "{numero_escolhido}" pertence a sequencia de fibonacci!')
+else:
+    print(f'O "{numero_escolhido}" NÃO pertence a sequencia de fibonacci!')
