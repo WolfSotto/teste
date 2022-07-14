@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #095785;
+    position: fixed;
+    top: 0;
+    z-index: 2
+}
+
+.logo h1 {
+    width: 50vh;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    float: left;
+    color: #222121;
+    padding: 6px;
+}
+
+.logo img {
+    width: 50vh;
+    float: left;
+    width: 75px;
+    height: 55px;
+}
+
+.logo span {
+    width: 50vh;
+    float: left;
+    width: 170px;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #222121;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+    width: 50vh;
+    float: right;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 17px;
+}
+
+#navbar ul a {
+    text-align: center;
+    text-decoration: none;
+    color: #222121;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+#navbar ul a:hover {
+    text-decoration: underline;
+    color: #2e2c2c;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(160deg, #686b6d 0%, #181719 100%);
+    padding-top: 60px;
+}
+
+.welcome .container {
+    padding-top: 20%;
+}
+
+.welcome h1 {
+    color: rgb(201, 199, 199);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.welcome p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #022235;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#project-title {
+    font-size: 25px;
+    color: rgb(201, 199, 199);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 35px;
+}
+
+#projects img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#projects {
+    width: 100%;
+    height: auto;
+    background-color: #37373a;
+    padding-bottom: 50px;
+}
+
+.table-projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1200px;
+}
+
+/*      ESTUDAR GRID LAYOUT DOCUMENTAÇÃO - VIDEOS         */
+/*      ESTUDAR FLEXBOX DOCUMENTAÇÃO - VIDEOS             */
+/*      ESTUDAR ANIMATION/KEYFRAMES DOCUMENTAÇÃO - VIDEOS */
+
+.project:hover {
+    transform: translate(6px, 6px);
+    -webkit-box-shadow: inset -1px -2px 21px 14px rgba(105, 96, 105, 1);
+    -moz-box-shadow: inset -1px -2px 21px 14px rgba(105, 96, 105, 1);
+    box-shadow: inset -1px -2px 16px 1px rgba(105, 96, 105, 1);
+}
+
+.project {
+    width: 350px;
+    height: 450px;
+    background-color: #3a3b3b;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 22px 5px rgba(71, 70, 71, 1);
+    -moz-box-shadow: 0px 0px 22px 5px rgba(71, 70, 71, 1);
+    box-shadow: 0px 0px 15px 5px rgb(46, 46, 46);
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+
+.project h2,
+a {
+    margin-top: 9px;
+    color: rgb(201, 199, 199);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+#contato {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(160deg, #686b6d 0%, #181719 100%);
+}
+
+.title-section {
+    text-align: center;
+    padding-top: 250px;
+    font-size: 23px;
+    color: rgb(201, 199, 199);
+}
+
+.title-section p {
+    color: #022235;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.icons-contact {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.icons-contact i {
+    font-size: 28px;
+    margin: 0 30px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons-contact i:hover {
+    cursor: pointer;
+    transform: translateY(6px);
+    color: #022235;
+    font-weight: bold;
+}
+
+.icons-contact a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    border-top: 6px solid #095785;
+    background: linear-gradient(160deg, #686b6d 0%, #181719 100%);
+    display: flex;
+}
+
+footer .container {
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #131212;
+}
+
+.description {
+    width: 75%;
+    float: left;
+}
+
+.copyright {
+    width: 25%;
+    float: right;
+}
